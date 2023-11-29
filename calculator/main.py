@@ -29,8 +29,7 @@ def calc(first, second, oper):
         result = first / second * 100
     elif oper == '**':
         result = first ** second
-    elif oper == 'log':
-        result = math.log(first, second)
+
     else:
         print('Некорректная операция!')
     return result
@@ -42,8 +41,7 @@ def operation():
                 '* - умножение двух чисел\n'
                 '/ - деление двух чисел\n'
                 '% - процент первого числа от второго\n'
-                '** - возведение первого числа в степень второго\n'
-                'log - логарифм первого числа по основанию второго\n')
+                '** - возведение первого числа в степень второго\n')
     if mes == '+':
         print('Вы выбрали сумму')
     elif mes == '-':
@@ -56,8 +54,7 @@ def operation():
         print('Вы выбрали нахождение процента первого числа от второго')
     elif mes == '**':
         print('Вы выбрали возведение в степень')
-    elif mes == 'log':
-        print('Вы выбрали логарифм')
+
 
     correct_operations = ['+', '-', '*', '/', '%', '**', 'log']
     while mes not in correct_operations:
